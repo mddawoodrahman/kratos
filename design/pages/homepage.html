@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Preview - Kratos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --background: #ffffff;
+            --foreground: #171717;
+        }
+        body { font-family: system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-4">
+            <a href="#" class="text-xl font-bold tracking-tighter">KRATOS</a>
+            <nav class="hidden md:flex gap-6 text-sm">
+                <a href="#" class="text-gray-600 hover:text-black">New Arrivals</a>
+                <a href="#" class="text-gray-600 hover:text-black">Apparel</a>
+                <a href="#" class="text-gray-600 hover:text-black">Accessories</a>
+                <a href="#" class="text-gray-600 hover:text-black">Sale</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <input type="search" placeholder="Search..." class="hidden sm:block bg-gray-100 rounded-lg px-3 py-2 text-sm w-48">
+                <button class="relative p-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    <span class="absolute -top-1 -right-1 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920')] bg-cover bg-center opacity-30"></div>
+        <div class="relative z-10 text-center px-4 max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight">Elevate Your Style</h1>
+            <p class="mt-6 text-lg text-gray-300 max-w-xl mx-auto">Discover curated collections crafted for the modern wardrobe. Premium quality, timeless design.</p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Shop Collection →</a>
+                <button class="border border-white/30 bg-white/10 px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition">✨ Ask AI Stylist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="py-20 max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center">Shop by Category</h2>
+        <p class="text-gray-600 text-center mt-2">Find what fits your style</p>
+        <div class="grid md:grid-cols-3 gap-4 mt-10">
+            <a href="#" class="relative aspect-[4/5] rounded-2xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Women">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h3 class="text-2xl font-bold text-white">Women</h3>
+                    <span class="text-white/80 text-sm">Shop Now →</span>
+                </div>
+            </a>
+            <a href="#" class="relative aspect-[4/3] rounded-2xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1507680434567-5739c80be1ac?w=600" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Men">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h3 class="text-xl font-bold text-white">Men</h3>
+                    <span class="text-white/80 text-sm">Shop Now →</span>
+                </div>
+            </a>
+            <a href="#" class="relative aspect-[4/3] rounded-2xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Accessories">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h3 class="text-xl font-bold text-white">Accessories</h3>
+                    <span class="text-white/80 text-sm">Shop Now →</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">New Arrivals</h2>
+            <p class="text-gray-600 text-center mt-2">The latest additions to our collection</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                <!-- Product Card 1 -->
+                <div class="group">
+                    <div class="relative aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" alt="Product">
+                    </div>
+                    <h3 class="mt-3 text-sm font-medium">Classic Cotton Tee</h3>
+                    <p class="text-sm font-semibold">₹1,299</p>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="group">
+                    <div class="relative aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=400" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" alt="Product">
+                    </div>
+                    <h3 class="mt-3 text-sm font-medium">Premium Hoodie</h3>
+                    <p class="text-sm font-semibold">₹2,499</p>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="group">
+                    <div class="relative aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" alt="Product">
+                    </div>
+                    <h3 class="mt-3 text-sm font-medium">Slim Fit Jeans</h3>
+                    <p class="text-sm font-semibold">₹3,999</p>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="group">
+                    <div class="relative aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" alt="Product">
+                    </div>
+                    <h3 class="mt-3 text-sm font-medium">Light Jacket</h3>
+                    <p class="text-sm font-semibold">₹4,999</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg">KRATOS</h4>
+                <p class="text-sm text-gray-600 mt-2">Modern clothing for the modern you.</p>
+            </div>
+            <div>
+                <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Shop</h5>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Help</h5>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Company</h5>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t text-center text-sm text-gray-500">
+            © 2026 Kratos. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

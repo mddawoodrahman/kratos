@@ -1,0 +1,470 @@
+# =====================================
+# Kratos Clothing Store - .gitignore
+# =====================================
+# Comprehensive ignore rules for Next.js, Sanity, React, TypeScript,
+# Testing, and development tools.
+# Last Updated: January 2026
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# =====================================
+# Dependencies & Package Managers
+# =====================================
+# Node modules
+node_modules/
+/.pnp
+.pnp.*
+.pnp.js
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+yarn-error.log*
+yarn-debug.log*
+
+# pnpm
+pnpm-debug.log*
+.pnpm-store/
+
+# npm
+npm-debug.log*
+
+# =====================================
+# Next.js
+# =====================================
+# Next.js build output
+/.next/
+/out/
+
+# Next.js static generation
+.next/static/
+.next/cache/
+
+# Next.js TypeScript declarations
+next-env.d.ts
+
+# =====================================
+# Production Build
+# =====================================
+/build/
+/dist/
+*.tgz
+
+# =====================================
+# Testing
+# =====================================
+# Jest
+/coverage/
+*.lcov
+.jest-cache/
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/blob-report/
+playwright/.auth/
+
+# Testing Library
+__snapshots__/
+
+# =====================================
+# Environment Variables & Secrets
+# =====================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+!.env.example
+!.env.template
+
+# Secrets directories
+secrets/
+.secrets
+
+# =====================================
+# TypeScript
+# =====================================
+*.tsbuildinfo
+.tsbuildinfo
+
+# TypeScript declaration maps
+*.d.ts.map
+
+# =====================================
+# Sanity CMS
+# =====================================
+# Sanity build output
+/sanity/dist/
+/.sanity/
+
+# Sanity CLI cache
+.sanity-cache/
+
+# Generated Sanity types (optional - uncomment if you regenerate on build)
+# sanity.types.ts
+# schema.json
+
+# =====================================
+# IDE & Editors
+# =====================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.code-workspace
+.history/
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =====================================
+# Operating System
+# =====================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================================
+# Debug & Logs
+# =====================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+lib-cov/
+
+# =====================================
+# Security & Certificates
+# =====================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.cer
+*.der
+
+# =====================================
+# Vercel
+# =====================================
+.vercel
+.vercel.json
+
+# =====================================
+# Stripe CLI
+# =====================================
+.stripe/
+
+# =====================================
+# Temporary Files
+# =====================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+.cache/
+.temp/
+tmp/
+temp/
+
+# =====================================
+# Package Manager Lock Files
+# =====================================
+# Keep pnpm-lock.yaml, ignore others
+package-lock.json
+yarn.lock
+shrinkwrap.json
+
+# =====================================
+# Build Tools & Bundlers
+# =====================================
+# Turbo
+.turbo/
+
+# Parcel
+.parcel-cache/
+
+# Webpack
+.webpack/
+
+# Rollup
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# =====================================
+# Deployment Platforms
+# =====================================
+# Netlify
+.netlify/
+
+# Amplify
+amplify/
+.amplify/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# =====================================
+# Miscellaneous
+# =====================================
+# Storybook
+storybook-static/
+.storybook-out/
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# ESLint cache
+.eslintcache
+
+# Biome cache (if any)
+.biome-cache/
+
+# Prettier
+.prettierignore
+
+# Stylelint
+.stylelintcache
+
+# Optional npm cache directory
+.npm/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# =====================================
+# AI & Machine Learning (if applicable)
+# =====================================
+*.h5
+*.pkl
+*.model
+*.weights
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# =====================================
+# GraphQL
+# =====================================
+# GraphQL schema and generated files
+schema.graphql.json
+graphql.schema.json
+generated/
+
+# =====================================
+# Misc Development Files
+# =====================================
+# Component library builds
+/components/dist/
+
+# Documentation builds
+/docs/.vuepress/dist/
+/docs/.next/
+
+# Benchmark results
+benchmark/
+
+# Editor directories and files
+.project
+.classpath
+.settings/
+
+# =====================================
+# Project-Specific
+# =====================================
+# Custom uploads (if not using CDN)
+/public/uploads/
+
+# Generated API documentation
+/api-docs/
+
+# Coverage directory used by testing tools
+htmlcov/
+
+# End of .gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# =====================================
+# Debug & Logs
+# =====================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.log
+logs/
+
+# =====================================
+# Security & Secrets
+# =====================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets
+
+# =====================================
+# Vercel
+# =====================================
+.vercel
+
+# =====================================
+# Stripe CLI
+# =====================================
+.stripe/
+
+# =====================================
+# Temporary Files
+# =====================================
+*.tmp
+*.temp
+*.bak
+*.backup
+.cache/
+.temp/
+tmp/
+temp/
+
+# =====================================
+# Package Manager Locks (keep pnpm-lock.yaml)
+# =====================================
+package-lock.json
+yarn.lock
+shrinkwrap.json
+
+# =====================================
+# Miscellaneous
+# =====================================
+# Local Netlify folder
+.netlify/
+
+# Storybook build
+storybook-static/
+
+# Turbo
+.turbo/
+
+# Docker
+docker-compose.override.yml
+
+# Generated files that should be regenerated
+# (Uncomment if you prefer to regenerate on build)
+# sanity.types.ts
+# schema.json
+
+# =====================================
+# AI & Machine Learning (if applicable)
+# =====================================
+*.h5
+*.pkl
+*.model
+__pycache__/
+.ipynb_checkpoints/
